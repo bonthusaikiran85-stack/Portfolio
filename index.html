@@ -1,142 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Venky — Senior Software Engineer</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venky - Senior Software Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background: #1a1a1a; color: #fff; padding: 20px; text-align: center; }
+    header h1 { margin: 0; }
+    nav { background: #333; color: #fff; text-align: center; padding: 10px 0; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+    section { padding: 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .job, .project { margin-bottom: 20px; }
+    .job h3, .project h3 { margin-bottom: 5px; color: #1a1a1a; }
+    ul { margin: 0; padding-left: 20px; }
+    footer { background: #1a1a1a; color: #fff; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
 
-    <!-- Bootstrap CSS (official CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<header>
+  <h1>Venky</h1>
+  <h3>Senior Software Engineer | Data Engineering | DevOps | Java Full Stack</h3>
+  <p>Email: your.email@example.com | LinkedIn: linkedin.com/in/yourprofile | GitHub: github.com/yourusername</p>
+</header>
 
-    <!-- Your styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+</nav>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Venky</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
-          aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Senior Software Engineer with 9+ years of expertise in Big Data Engineering, Java Full Stack Development, and DevOps. Proven track record in designing scalable data pipelines, optimizing distributed systems, and delivering enterprise-grade solutions across banking, healthcare, and technology domains.</p>
+</section>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.pdf" download>Resume</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>
+      <h4>Big Data Ecosystem</h4>
+      <p>Hadoop, MapReduce, PySpark, YARN, HDFS, HBase, Zookeeper, Hive, Hue, Pig, Sqoop, Spark, Flink, Oozie, Storm, Flume, Hortonworks clusters</p>
+    </div>
+    <div>
+      <h4>Languages</h4>
+      <p>C, PL/SQL, Pig Latin, Python, HiveQL, Scala, SQL</p>
+    </div>
+    <div>
+      <h4>AWS & Cloud</h4>
+      <p>EMR, Glue, Athena, DynamoDB, Redshift, RDS, Data pipelines, BigQuery, Airflow, S3, IAM, CloudFormation, EC2, ELB/CLB, Lambda</p>
+    </div>
+    <div>
+      <h4>Databases</h4>
+      <p>Oracle, Microsoft SQL Server, MySQL, DB2, Snowflake, Teradata SQL, MongoDB, Cassandra, HBase</p>
+    </div>
+    <div>
+      <h4>DevOps & Tools</h4>
+      <p>Kubernetes, Docker, OpenShift, GitHub, Bitbucket, Jenkins, Maven, ANT</p>
+    </div>
+    <div>
+      <h4>Visualization</h4>
+      <p>Tableau, Power BI</p>
+    </div>
+  </div>
+</section>
 
-    <!-- HERO / ABOUT -->
-    <section id="about" class="py-5 text-center bg-light">
-      <div class="container">
-        <img src="images/profile.jpg" alt="Profile" class="rounded-circle shadow" width="160" height="160">
-        <h1 class="mt-3">Venky</h1>
-        <h4 class="text-muted">Senior Software Engineer — Java Full Stack | DevOps | Data Engineering</h4>
-        <p class="lead mt-3">I design and build scalable data & backend systems, run CI/CD pipelines, and deliver reliable production software.</p>
-        <a href="resume.pdf" class="btn btn-primary me-2" download>Download Resume</a>
-        <a href="#projects" class="btn btn-outline-primary">See Projects</a>
-      </div>
-    </section>
+<section id="experience">
+  <h2>Experience</h2>
 
-    <!-- SKILLS -->
-    <section id="skills" class="py-5">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="row mt-3">
-          <div class="col-md-4">
-            <h5>Programming</h5>
-            <ul>
-              <li>Java, Spring Boot</li>
-              <li>Python, SQL</li>
-              <li>JavaScript (ES6+)</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>DevOps</h5>
-            <ul>
-              <li>Docker, Kubernetes</li>
-              <li>CI/CD: Jenkins, GitHub Actions</li>
-              <li>AWS (EC2, S3, EKS)</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Data Engineering</h5>
-            <ul>
-              <li>Apache Spark, Kafka</li>
-              <li>Airflow, ETL pipelines</li>
-              <li>Big Data / Data lakes</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="job">
+    <h3>Sr. Data Engineer - Amgen, Thousand Oaks, CA (Jun 2024 – Present)</h3>
+    <ul>
+      <li>Architected secure, scalable data lake across AWS & GCP for real-time and batch clinical trial analytics.</li>
+      <li>Built ETL pipelines with Databricks (PySpark, Scala) to process SAP, Adobe Analytics, and database data into Delta Lake and Snowflake.</li>
+      <li>Optimized Spark jobs, reducing processing time for critical data marts.</li>
+    </ul>
+  </div>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="py-5 bg-light">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline mt-4">
-          <!-- example card -->
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">Senior Software Engineer — Company X</h5>
-              <h6 class="card-subtitle mb-2 text-muted">June 2021 — Present</h6>
-              <p class="card-text">Short bullet summary of impact (migrate pipelines to Spark, reduced cost by X%, ...).</p>
-            </div>
-          </div>
-          <!-- Add more cards for other roles -->
-        </div>
-      </div>
-    </section>
+  <div class="job">
+    <h3>Data Engineer - Fifth Third Bank, Cincinnati, OH (Jul 2023 – May 2024)</h3>
+    <ul>
+      <li>Developed AWS-based pipelines using Glue, EMR, Redshift, Athena, RDS, orchestrated with Airflow and Step Functions.</li>
+      <li>Created Lambda ingestion for API data, converting nested JSON to Parquet for S3 storage.</li>
+      <li>Designed dynamic Airflow DAGs with custom operators for flexible orchestration.</li>
+    </ul>
+  </div>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2>Projects</h2>
+  <div class="job">
+    <h3>Hadoop Developer - Landmark IT Solutions, Hyderabad, India (Oct 2018 – Nov 2022)</h3>
+    <ul>
+      <li>Worked with Spark, Airflow, Hive, HDFS, and Impala to deliver daily ETL requirements.</li>
+      <li>Deployed code across environments, resolved developer issues, and maintained Hadoop clusters.</li>
+      <li>Installed new components, applied patches, and performed large-scale data transformations in EMR clusters.</li>
+    </ul>
+  </div>
 
-        <div class="row mt-4">
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-              <img src="images/project1.png" class="card-img-top" alt="Project 1 screenshot">
-              <div class="card-body">
-                <h5 class="card-title">Project 1 — Data Pipeline</h5>
-                <p class="card-text">Short description. Tech: Spark, Kafka, Airflow.</p>
-                <a href="#" class="card-link">GitHub</a>
-              </div>
-            </div>
-          </div>
+  <div class="job">
+    <h3>Hadoop Developer - Sunfra Technologies, Bangalore, India (Jul 2015 – Jul 2018)</h3>
+    <ul>
+      <li>Managed multi-source data ingestion, HDFS maintenance, and pipeline development using Sqoop and Spark.</li>
+      <li>Created frameworks for database-to-HDFS data transfers using Sqoop and HiveQL for reporting.</li>
+      <li>Optimized Spark and Hive queries for performance and AWS integration.</li>
+    </ul>
+  </div>
+</section>
 
-          <!-- Add up to 4 featured project cards -->
-        </div>
+<section id="projects">
+  <h2>Projects</h2>
 
-      </div>
-    </section>
+  <div class="project">
+    <h3>Clinical Trial Data Lake Platform</h3>
+    <p>Designed a compliant, multi-cloud data lake for clinical trials using AWS, GCP, Databricks, Snowflake, and Airflow.</p>
+    <p><strong>Tech Stack:</strong> AWS, GCP, Databricks, PySpark, Scala, Snowflake, Airflow</p>
+  </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="py-5 bg-dark text-white">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com" class="text-white">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-white">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" class="text-white">github.com/yourusername</a></p>
-      </div>
-    </section>
+  <div class="project">
+    <h3>Financial Data Ingestion & Reporting System</h3>
+    <p>Built automated financial data pipelines with Glue, EMR, and Redshift, enabling dynamic reporting and analytics.</p>
+    <p><strong>Tech Stack:</strong> AWS Glue, EMR, Redshift, Airflow, Lambda, S3</p>
+  </div>
 
-    <!-- Bootstrap JS bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <div class="project">
+    <h3>Enterprise Hadoop Cluster Management</h3>
+    <p>Developed and maintained large-scale Hadoop environments with Spark, Hive, Impala, and Airflow for enterprise analytics.</p>
+    <p><strong>Tech Stack:</strong> Hadoop, Spark, Hive, Airflow, Cloudera Manager</p>
+  </div>
 
-    <!-- Your JS -->
-    <script src="script.js"></script>
-  </body>
+  <div class="project">
+    <h3>Big Data Ingestion & AWS Migration</h3>
+    <p>Designed and migrated on-premise big data pipelines to AWS EMR, optimizing Spark jobs and Hive queries for scalability.</p>
+    <p><strong>Tech Stack:</strong> Sqoop, Hive, Spark, AWS EMR, S3</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2025 Venky | Senior Software Engineer</p>
+</footer>
+
+</body>
 </html>
